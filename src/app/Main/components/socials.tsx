@@ -1,19 +1,20 @@
 import Icon from '@/components/Icons'
 import { Button } from '@nextui-org/react'
+import Link from 'next/link'
 import React from 'react'
 
 const Socials = () => {
   return (
-    <div className='flex flex-row flex-wrap-0'>
-         <Button className="bg-[#292f46] hover:bg-[#3d51a1] px-1" size="sm" isIconOnly>
+    <div className='flex flex-row flex-wrap-0 gap-2'>
+         <Link href="https://github.com/kikiou1991" target='_blank' className='transfrom transition-transform hover:scale-125'>
           <Icon name="linkedIn"/>
-        </Button >
-        <Button className="bg-[#292f46] hover:bg-[#3d51a1] px-1" size="sm" isIconOnly>
+        </Link >
+        <Link href="https://www.linkedin.com/in/gabor-adorjani-599666290/" className="transfrom transition-transform hover:scale-125"  >
           <Icon name="github"/>
-        </Button>
-        <Button className="bg-[#292f46] hover:bg-[#3d51a1] px-1"  size="sm" isIconOnly>
+        </Link>
+        <Link  href="" className="transfrom transition-transform hover:scale-125"  >
           <Icon name="discord"/>
-        </Button>
+        </Link>
     </div>
   )
 }

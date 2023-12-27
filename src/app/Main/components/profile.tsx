@@ -4,10 +4,11 @@ import React from 'react'
 
 interface Props {
     name: string,
-    location: string
+    location: string,
+    email: string
 }
 
-const Profile = ({name, location}: Props) => {
+const Profile = ({name, location, email}: Props) => {
   return (
     <Navbar className='bg-[#292f46]'>
     
@@ -27,8 +28,18 @@ const Profile = ({name, location}: Props) => {
                 </DropdownTrigger>
                 <DropdownMenu >
                   <DropdownSection>
+                    <DropdownItem>
+                      <p className="font-semibold">Signed in as</p>
+                      <p className="font-semibold">{email}</p></DropdownItem>
                     <DropdownItem>{name}</DropdownItem>
                     <DropdownItem>{location}</DropdownItem>
+                    <DropdownItem>
+                      <p className=''>Settings</p>
+                    </DropdownItem>
+                    <DropdownItem>
+                      <p className=''>Logout</p>
+                    </DropdownItem>
+
 
                   </DropdownSection>
                   
