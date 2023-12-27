@@ -19,7 +19,7 @@ const SignUp = () => {
           </div>
           <Button
             color="primary" variant="light"
-          ><Link href="/Login/sign-up">Sign-In</Link></Button>
+          ><Link href="/Login/sign-in">Sign-In</Link></Button>
     </div>
   
 </div>

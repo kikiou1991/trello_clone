@@ -7,3 +7,4 @@ export default function Home() {
     redirect('/Login/sign-in')
   )
 }
+
