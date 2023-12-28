@@ -14,7 +14,7 @@ import {
 } from '@nextui-org/react';
 import Icon from '@/components/Icons';
 
-import Profile from '../profile';
+import Profile from './profile';
 import NavigationMobile from '../mobileNavigation';
 import MyModal from '../modals/modal';
 import Socials from '../socials';

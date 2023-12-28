@@ -51,8 +51,8 @@ const MyModalEmail = () => {
                 label="Email"
                 placeholder="someone@gmail.com"
                 description="Please enter the email address of the person you wish to invite."
-                className="max-w-xs text-[#a8b0d3]"
-                color='primary'
+                className="max-w-xs text-[#f25746] "
+                color='default'
               />
            
           </ModalBody>

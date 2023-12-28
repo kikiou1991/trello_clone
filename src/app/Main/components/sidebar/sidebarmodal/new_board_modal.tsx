@@ -42,7 +42,7 @@ const MyModalNewBoard = () => {
         >
         <ModalContent>
           <ModalHeader className="flex flex-col gap-1 items-center align-middle">
-              <h1>Create Board</h1>
+              <h1 className=''>Create Board</h1>
 
           </ModalHeader>
           <ModalBody>
@@ -51,8 +51,8 @@ const MyModalNewBoard = () => {
                 type="email"
                 label="Board Title"
                 description="Name your new board"
-                className="max-w-xs text-[#a8b0d3]"
-                color='primary'
+                className="max-w-xs font-semibold text-slate-100"
+                color='default'
                 
                 labelPlacement='outside'
               />
@@ -66,8 +66,8 @@ const MyModalNewBoard = () => {
                             labelPlacement='outside'
                             placeholder="Hogwarts Workplace"
                             description="Select Workplace"
-                            className="max-w-xs text-[#a8b0d3]"
-                            color='primary'
+                            className="max-w-xs text-slate-100 font-semibold"
+                            color='default'
                             endContent={<Icon name="downarrow"/>}
                         />
 
@@ -86,8 +86,8 @@ const MyModalNewBoard = () => {
            
           </ModalBody>
           <ModalFooter>
-            {/* Sumbit button so add new board */}
-              <Button onSubmit={() => {}} className="items-center" color='primary' variant='ghost'>Create</Button>
+            {/* Sumbit button so add new */}
+              <Button onSubmit={() => {}} className="items-center" color='primary' variant='solid'>Create</Button>
           </ModalFooter>
         </ModalContent>
       </Modal>
