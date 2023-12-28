@@ -13,11 +13,14 @@ import {
   DropdownItem,
 } from '@nextui-org/react';
 import Icon from '@/components/Icons';
-import Header from './header';
-import Profile from './profile';
-import NavigationMobile from './mobileNavigation';
-import MyModal from './modals/modal';
-import Socials from './socials';
+
+import Profile from '../profile';
+import NavigationMobile from '../mobileNavigation';
+import MyModal from '../modals/modal';
+import Socials from '../socials';
+
+
+import navBarItems from '../navbar/navbardata'
 
 const NavbarTop = () => {
   return (
@@ -57,48 +60,28 @@ const NavbarTop = () => {
         {/* Logo */}
 
         <Icon name="projectIcon" />
-       {/* First Dropdown Projects */}
-        <Dropdown className="bg-slate-100" placement="bottom-start">
+      
+       
+        {/*DropDown Navigation */}
+        
+        {navBarItems.map((navbar) => (
+        <Dropdown key={navbar.id} className='bg-slate-100' placement='bottom-start'>
           <DropdownTrigger>
             <div className='flex gap-1 items-center'>
-              <Button 
-                size="md"
-                className='bg-inherit'
-                endContent={<Icon name="downarrow"/>}
-                >
-                <p>Projects</p>
+              <Button size='md' className='bg-inherit' endContent={<Icon name='downarrow' />}>
+                <p>{navbar.name}</p>
               </Button>
-            </div>            
+            </div>
           </DropdownTrigger>
           <DropdownMenu>
             <DropdownSection>
-              <DropdownItem>Something</DropdownItem>
-              <DropdownItem>This is a notification</DropdownItem>
+              {navbar.submenu.map((submenuItem) => (
+                <DropdownItem key={submenuItem.id}>{submenuItem.name}</DropdownItem>
+              ))}
             </DropdownSection>
           </DropdownMenu>
         </Dropdown>
-                
-      {/* Second dropdown Recent */}
-
-      <Dropdown className="bg-slate-100" placement="bottom-start">
-          <DropdownTrigger>
-            <div className='flex gap-1 items-center'>
-              <Button 
-                size="md"
-                className='bg-inherit'
-                endContent={<Icon name="downarrow"/>}
-                >
-                <p>Recent</p>
-              </Button>
-            </div>            
-          </DropdownTrigger>
-          <DropdownMenu>
-            <DropdownSection>
-              <DropdownItem>Something</DropdownItem>
-              <DropdownItem>This is a notification</DropdownItem>
-            </DropdownSection>
-          </DropdownMenu>
-        </Dropdown>
+      ))}
                 
 
         <Dropdown className="bg-slate-100" placement="bottom-start">

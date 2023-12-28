@@ -56,10 +56,10 @@ const MyModal = () => {
           <ModalHeader className="flex flex-col gap-1">
           <Input
             classNames={{
-                base: "max-w-full sm:max-w-[28rem] h-10",
+                base: "max-w-full sm:max-w-[24rem] h-10",
                 mainWrapper: "h-full w-full",
                 input: "text-small",
-                inputWrapper: "h-full w-full font-normal text-default-500 bg-default-400/20",
+                inputWrapper: "data-[hover=true]:bg-[#3d51a1] h-full font-normal text-slate-100 bg-[#3d51a1]/50 hover:bg-sky-700",
             }}
             placeholder="Type to search..."
             size="md"

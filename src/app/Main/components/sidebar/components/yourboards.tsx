@@ -2,6 +2,8 @@
 import Icon from '@/components/Icons'
 import { Image } from '@nextui-org/react'
 import React from 'react'
+import MyModal from '../sidebarmodal/modalsidebar'
+import MyModalNewBoard from '../sidebarmodal/new_board_modal'
 
 
 const projects = [
@@ -29,7 +31,7 @@ const YourBoards = () => {
     <div>
         <div className='flex flex-row px-2 pt-2'>
             <h2 className='font-semibold flex-grow'>Your Boards</h2>
-            <Icon name="addIcon" onClick={() => {}}/>
+            <MyModalNewBoard/>
         </div>
         <div className='pt-2 flex flex-col'>
             {projects.map((project) => (

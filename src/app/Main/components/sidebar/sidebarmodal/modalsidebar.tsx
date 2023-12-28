@@ -20,9 +20,9 @@ const MyModal = () => {
     <>
     
     {/* <Icon name="addIcon" onClick={openModal}/> */}
-    <div onClick={openModal}>
-      <Icon name="addIcon"/>
-    </div>
+   
+      <Icon name="addIcon" onClick={openModal}/>
+
                             
                             
       <Modal 
@@ -47,7 +47,7 @@ const MyModal = () => {
                 base: "max-w-full sm:max-w-[28rem] h-10",
                 mainWrapper: "h-full w-full",
                 input: "text-small",
-                inputWrapper: "h-full w-full font-normal text-default-500 bg-default-400/20",
+                inputWrapper: "data-[hover=true]:bg-[#3d51a1] h-full w-full font-normal text-default-500 bg-default-400/20",
             }}
             placeholder="Type to search..."
             size="md"

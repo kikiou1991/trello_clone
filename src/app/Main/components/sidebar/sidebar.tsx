@@ -1,8 +1,8 @@
 import React from 'react'
-import BoardView from './sidebar/boardview'
-import CurrentProject from './sidebar/currentproject'
-import WorkspaceView from './sidebar/workspaceview'
-import YourBoards from './sidebar/yourboards'
+import BoardView from './components/boardview'
+import CurrentProject from './components/currentproject'
+import WorkspaceView from './components/workspaceview'
+import YourBoards from './components/yourboards'
 
 const Sidebar = () => {
   return (

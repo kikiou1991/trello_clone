@@ -3,7 +3,9 @@ import Icon from '@/components/Icons'
 import React from 'react'
 
 import {Dropdown, Button, DropdownItem, DropdownMenu, DropdownSection, DropdownTrigger } from '@nextui-org/react'
-import MyModal from '../modals/modal'
+
+import MyModalEmail from '../sidebarmodal/newmember_modal'
+
 
 const BoardView = () => {
   return (
@@ -17,14 +19,13 @@ const BoardView = () => {
                 <Icon name="members"/>
                 <p>Members</p>
             </div>
-
-            <div>
-                <Button isIconOnly className='bg-inherit px-0'>
-                        <Icon name="addIcon" />
-                </Button>
+                <MyModalEmail/>
+            
+                
+               
 
                    
-            </div>
+           
 
         </div>
         <div className='h-8 flex flex-row  hover:bg-[#602ee4]  px-2 '>
